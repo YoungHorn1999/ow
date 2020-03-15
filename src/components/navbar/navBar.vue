@@ -21,6 +21,8 @@ export default {
     background-color: #312e2f;
     width: 100%;
     height: 114px;
+    position: fixed;
+    top: 0;
   }
 
     .navBarRightTop{
