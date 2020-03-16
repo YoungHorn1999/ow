@@ -13,13 +13,11 @@
 
 <script>
 import navBar from './navBar'
-import navBarItem from './navBarItem'
 
 export default {
     name: "mainNavBar",
     components: {
         navBar,
-        navBarItem
     },
     data() {
         return {
@@ -30,7 +28,9 @@ export default {
     },
     methods: {
         titleclick(index) {
-            this.currentIndex = index
+            this.currentIndex = index;
+            this.$emit('titleclick', index);
+            console.log(idnex)
         }
     }
 }

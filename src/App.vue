@@ -1,31 +1,30 @@
 <template>
   <div id="app">
     <mainNavBar/>
-    <img src="./assets/img/bg.png" class="bg">
-    <mySwiper/>
+    <Background/>
+    <mySwiper/> 
+    <Maincontent/>
   </div>
 </template>
 
 <script>
 import mainNavBar from './components/navbar/mainNavBar'
+import Background from './components/background/Background'
 import mySwiper from './components/swiper/mySwiper'
+import Maincontent from './components/maincontent/Maincontent'
+
 
 export default {
   name: "App",
   components: {
     mainNavBar,
-    mySwiper
+    mySwiper,
+    Background,
+    Maincontent
   },
-  
 }
 </script>
 
 <style>
   @import "./assets/css/base.css";
-
-.bg{
-  width: 100%;
-  height: 400px;
-  margin-top: 114px;
-}
 </style>
