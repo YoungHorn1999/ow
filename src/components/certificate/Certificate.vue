@@ -29,7 +29,7 @@ export default {
     .certificate{
     width: 100%;
     position: absolute;
-    top: 3200px;
+    top: 3193px;
     height: 670px;
     background-color: #3d383a;
   }

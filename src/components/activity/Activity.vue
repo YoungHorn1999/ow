@@ -16,7 +16,7 @@ export default {
     name: "Activity",
     methods: {
     moreActivityClick() {
-
+      this.$router.push("/activity")
     }
   }
 }

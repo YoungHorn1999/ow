@@ -18,7 +18,7 @@ export default {
     width: 100%;
     height: 230px;
     position: absolute;
-    top: 3870px;
+    top: 3863px;
     background-color: #312e2f;
   }
 

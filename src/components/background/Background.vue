@@ -14,6 +14,6 @@ export default {
 .bg{
   width: 100%;
   height: 400px;
-  margin-top: 114px;
+  margin-top: 93px;
 }
 </style>
