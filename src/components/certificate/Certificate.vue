@@ -1,6 +1,6 @@
 <template>
     <div class="certificate">
-      <span class="certificatetitle">证书核对</span>
+      <span class="certificatetitle">证书鉴定</span>
       <span class="certificatecontent">方言认证证书代表了最高标准的可靠性、一致性和完整性。<br>
             而现在，我们为所有方言认证证书证书提供核对服务，让您享受更令人放心的保证。<br>
             借助证书核对服务，您可以方便快捷地确认证书中记载的信息是否与证书数据库中存档的信息相一致。

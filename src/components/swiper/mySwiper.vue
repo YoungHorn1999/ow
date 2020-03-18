@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div ref="block0">
       <swiper :options="swiperOption">
         <swiper-slide class="swiper-slide" v-for="(item,index) in slide" :key="index">
           <span>

@@ -6,7 +6,7 @@
       <div slot="item-text2" class="navBaritem">
           <div v-for="(item2,index) in titles2" :key="item2" 
           class="navBar-item2" :class="{active: index === currentIndex}"
-          @click="titleclick(index)"><span style="cursor:pointer">{{item2}}</span></div>
+          @click="titleClick(index)"><span style="cursor:pointer">{{item2}}</span></div>
       </div>
     </navBar>
 </template>
@@ -27,7 +27,7 @@ export default {
         }
     },
     methods: {
-        titleclick(index) {
+        titleClick(index) {
             this.currentIndex = index;
             if(index === 0){
                 this.$router.push("/home")    
