@@ -26,7 +26,7 @@ export default {
         return {
             titles1: ['EN | 简体中文', '登录'],
             titles2: ['首页','简介','官方活动','业务版图','证书鉴定'],
-            currentIndex: 2,
+            currentIndex: 4,
             isActive: true
         }
     },

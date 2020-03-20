@@ -26,7 +26,7 @@ export default {
         return {
             titles1: ['EN | 简体中文', '登录'],
             titles2: ['首页','简介','官方活动','业务版图','证书鉴定'],
-            currentIndex: 2,
+            currentIndex: 9,
             isActive: true
         }
     },
@@ -97,7 +97,7 @@ export default {
     position: absolute;
     left: 210px;
     top: 30px;
-    color: white;
+    color: #ff6000;
     font-size: 1.5vw;
     cursor:pointer;
   }

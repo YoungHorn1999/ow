@@ -15,13 +15,18 @@
         </select>
       </form>
       <input type="text" placeholder="请输入证书编号" class="input">
-      <input type="submit" value="查询" class="submit">
+      <input type="submit" value="查询" class="submit" @click="certificateClick">
     </div>
 </template>
 
 <script>
 export default {
-    name: "Certificate"
+    name: "Certificate",
+    methods: {
+    certificateClick() {
+      this.$router.push("/certificate")
+    }
+}
 }
 </script>
 

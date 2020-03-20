@@ -3,8 +3,12 @@
         <div  ref="block0" id="flag" ></div>
         <navBar>
         <div slot="item-text1" class="navBaritem">
-            <div v-for="item1 in titles1" :key="item1" class="navBar-item1"><span style="cursor:pointer">{{item1}}</span></div>
+            <span class="text1" :class="{active: !isActive}" @click="changeLang">EN</span>
+            <span class="text2">|</span>
+            <span class="text3" :class="{active: isActive}" @click="changeLang">简体中文</span>
+            <span class="text4" @click="login">登录</span>
         </div>
+        
         <div slot="item-text2" class="navBaritem">
             <div v-for="(item2,index) in titles2" :key="item2" 
             class="navBar-item2" :class="{active: index === currentIndex}"
@@ -53,7 +57,8 @@ export default {
         return {
             titles1: ['EN | 简体中文', '登录'],
             titles2: ['首页','简介','官方活动','业务版图','证书鉴定'],
-            currentIndex: 0
+            currentIndex: 0,
+            isActive: true
         }
     },
     mounted() {
@@ -65,6 +70,14 @@ export default {
         window.removeEventListener('scroll', this.onScroll)
     },
     methods: {
+        changeLang() {
+          this.isActive = !this.isActive
+        },
+
+        login() {
+          this.$router.push("/login")
+        },
+
         goAssignBlock(el, speed) {
             let _this = this;
             let windowH = window.innerHeight; //浏览器窗口高度
@@ -177,12 +190,47 @@ export default {
         top: 3150px;
     }
 
-    .navBar-item1{
+    /* .navBar-item1{
       flex: 1;
       text-align: center;
       color: white;
       font-size: 1.5vw;
       margin-top: 22px;
+  } */
+
+  .text1{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    color: white;
+    font-size: 1.5vw;
+    cursor:pointer
+  }
+
+  .text2{
+    position: absolute;
+    left: 45px;
+    top: 30px;
+    color: white;
+    font-size: 1.5vw;
+  }
+
+  .text3{
+    position: absolute;
+    left: 70px;
+    top: 30px;
+    color: white;
+    font-size: 1.5vw;
+    cursor:pointer
+  }
+
+  .text4{
+    position: absolute;
+    left: 210px;
+    top: 30px;
+    color: white;
+    font-size: 1.5vw;
+    cursor:pointer;
   }
 
   .navBar-item2{
